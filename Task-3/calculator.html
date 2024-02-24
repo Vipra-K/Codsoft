@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+    <script type="text/javascript" src="calculator.js"></script>
+</head>
+<body>
+    <div class="container">
+        <input type="text" id="display" autofocus>
+        <button class="btn" id="allclrbtn"onclick="allclear()" style="font-size: 2rem;">AC</button>
+        <button class="btn" id="clrbtn" onclick="clearInput()">C</button>
+        <button class="btn op" onclick="result('()')" style="font-size: 2rem;">&lpar; &rpar;</button>
+        <button class="btn op" onclick="result('/')">&divide;</button>
+        <button class="btn" class="btn" onclick="result('7')">7</button>
+        <button class="btn" class="btn" onclick="result('8')">8</button>
+        <button class="btn" class="btn" onclick="result('9')">9</button>
+        <button class="btn op" onclick="result('*')">&times;</button>
+        <button class="btn" class="btn" onclick="result('4')">4</button>
+        <button class="btn" class="btn" onclick="result('5')">5</button>
+        <button class="btn" class="btn" onclick="result('6')">6</button>
+        <button class="btn op" onclick="result('-')">&minus;</button>
+        <button class="btn" class="btn" onclick="result('1')">1</button>
+        <button class="btn" class="btn" onclick="result('2')">2</button>
+        <button class="btn" class="btn" onclick="result('3')">3</button>
+        <button class="btn op" onclick="result('+')">&plus;</button>
+        <button class="btn op" onclick="toggleSign()">+/-</button>
+        <button class="btn" class="btn" onclick="result('0')">0</button>
+        <button class="btn" class="btn" onclick="result('.')">.</button>
+        <button class="btn"  id="equaltobtn" onclick="cal()">=</button>
+    </div>
+</body>
+</html>
